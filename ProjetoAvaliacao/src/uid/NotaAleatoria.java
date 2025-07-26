@@ -4,7 +4,7 @@ public class NotaAleatoria {
 	
 	float max = 10;
 	float min = 0;
-	float range = max - min + 1;
+	float range = max - min;
 	
 	public double[] notas() {
 		
