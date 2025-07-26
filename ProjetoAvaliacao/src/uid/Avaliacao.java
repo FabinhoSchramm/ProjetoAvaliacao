@@ -4,11 +4,14 @@ public class Avaliacao {
 	
 	double n1,n2,n3;
 	
-	Avaliacao(double n1, double n2, double n3){
-		this.n1 = n1;
-		this.n2 = n2;
-		this.n3 = n3;
+	NotaAleatoria n = new NotaAleatoria();
+
+	Avaliacao() {
+		this.n1 = n.notas()[0];
+		this.n2 = n.notas()[1];
+		this.n3 = n.notas()[2];
 	}
+
 
 	public double mediaAritimetica() {
 		return (n1+n2+n3)/3;
